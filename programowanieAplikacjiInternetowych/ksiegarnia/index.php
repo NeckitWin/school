@@ -21,7 +21,7 @@ if(isset($_GET["site"])) {
     require "./components/navbar.php"; 
   ?>
     
-    <div id="tresc">
+    <div id="tresc" class="div">
       <p>zalogowany użytkownik: <?php?></p>
       <?php 
         switch ($site) {
