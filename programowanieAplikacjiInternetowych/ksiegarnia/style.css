@@ -1,0 +1,128 @@
+*{
+     box-sizing: border-box;   
+}
+body{
+  color:navy;
+  font:  16px /40px Arial, sans-serif;
+  height: 100vh;
+    background-image:url(zadanieE14_1/grafika/tlo.jpg);
+    margin: 0;
+    padding: 0;
+}
+#calosc{
+  overflow:auto;
+  box-sizing:border-box;
+  height: 100vh;
+  display:flex;
+  align-items:stretch;
+  flex-wrap:wrap;
+  width: 1200px;
+  margin:auto;
+  border: 1px navy solid;
+}
+div div{
+  border:1px solid #000;
+  box-sizing:border-box;
+  padding:10px;
+}
+
+#header{
+  align-self:stretch;
+  padding: 0 10px;
+  flex-basis: 100%;
+  width:100%;
+  height: 100px;
+  display: flex;
+  background-color:#95c8f5;
+  text-align: center;
+  text-shadow: 3px 3px 2px #fddda4;
+  color: #000;
+}
+
+#header picture{
+    display: block;
+    float: left;
+    flex-basis: 20%;
+    margin: 0;
+    padding: 0;
+}
+#header h1 {
+    float: right;
+    text-align: center;
+    flex-basis: 80%;
+}
+#nav{
+  height:calc(100vh - 142px);
+  width: 20%;
+  flex-basis: 20%;
+  background-color:#c5def4;
+  padding: 0;
+}
+#nav ul{
+  list-style: none;
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+  color: navy;
+}
+
+#nav a{
+  text-decoration: none;
+  display: block;
+  box-sizing:border-box;
+  width: 100%;
+  text-align:center;  
+  background-color: #95c8f5;
+  margin-top: 20px;
+  color: navy;
+  border: 3px solid #fddda4;
+}
+#nav a:hover{
+  background-color:#1568ae;
+  color: #fff;
+}
+
+#tresc{
+  height:calc(100vh - 140px);
+  flex-basis: 80%;
+  width: 80%;
+  padding: 0px;
+  background-color: #fff;
+}
+#tresc p{
+  padding:0 10px;
+  margin: 0;
+  background-color: #fddda4;
+  line-height: 16px;
+  height: 30px;
+}
+#tresc h3{
+  text-align: center; 
+}
+#tresc picture{
+ display: block;
+ text-align: center; 
+}
+#tresc picture img{
+ max-height: 100px;   
+}
+#foot{
+  flex-basis: 100%;
+  width: 100%;
+  height: 40px;
+  background-color:#95c8f5;
+  text-align:center;
+  vertical-align:center;
+  color: #000;
+  font: bold 12px Arial;
+  letter-spacing:5px;
+  border-top: 3px solid #fddda4;
+}
+
+
+ol > li:nth-child(3n+2){
+  color:green;
+}
+
+
