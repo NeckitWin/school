@@ -1,0 +1,26 @@
+header {
+    align-self: stretch;
+    padding: 0 10px;
+    flex-basis: 100%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #95c8f5;
+    text-align: center;
+    text-shadow: 3px 3px 2px #fddda4;
+    color: #000;
+}
+
+header picture {
+    display: block;
+    float: left;
+    flex-basis: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    float: right;
+    text-align: center;
+    flex-basis: 80%;
+}

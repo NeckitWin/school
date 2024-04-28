@@ -1,0 +1,25 @@
+.zakupy {
+    padding: 10px;
+}
+
+.zakupy table, .zakupy th, .zakupy td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.zakupy table {
+    width: 100%;
+}
+.zakupy th {
+    line-height: 1.2;
+    padding: 5px;
+}
+
+.zakupy td{
+    padding: 5px;
+    line-height: 1;
+}
+
+.zakupy td input {
+    width: 50px;
+}
