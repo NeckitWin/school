@@ -5,7 +5,6 @@
 body {
     color: navy;
     font: 16px /40px Arial, sans-serif;
-    height: 100vh;
     background-image: url(zadanieE14_1/grafika/tlo.jpg);
     margin: 0;
     padding: 0;
@@ -55,7 +54,7 @@ body {
 }
 
 #tresc picture img {
-    max-height: 100px;
+    max-height: 200px;
 }
 
 .logout {
@@ -63,6 +62,14 @@ body {
     justify-content: space-between;
 }
 
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+}
+
 .logout button {
     color: #FF0000;
+}
+
+.error {
+    color: red;
 }

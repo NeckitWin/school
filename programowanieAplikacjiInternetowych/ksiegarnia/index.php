@@ -1,12 +1,5 @@
 <?php
-session_start();
-$router = "home";
-if (isset($_GET["router"])) {
-    $router = $_GET["router"];
-}
-if (isset($_GET["logout"])) {
-    session_unset();
-}
+require "./sesja.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,24 +20,21 @@ if (isset($_GET["logout"])) {
 
     <div id="tresc">
         <div class="yellow logout">Zalogowany użytkownik: <?php
-            echo isset($_SESSION["username"]) ? $_SESSION["username"] . "<form><button type='submit' name='logout'>Wyloguj</button></form>" : "brak"; ?>
+            echo isset($_SESSION["username"]) ? $_SESSION["username"] . "<form method='POST'><button type='submit' name='logout'>Wyloguj</button></form>" : "brak"; ?>
         </div>
-        <?php
-        switch ($router) {
-            case 'home':
-                require "./pages/main.php";
-                break;
-            case 'login':
-                require "./pages/login.php";
-                break;
-            case 'zakupy':
-                require "./pages/zakupy.php";
-                break;
-            case 'koszyk':
-                require "./pages/koszyk.php";
-                break;
-        }
-        ?>
+        <h3>Nasza księgarnia spełni wszystkie Twoje oczekiwania</h3>
+        <ol>
+            <li>Książki otrzymasz najpożniej 3 dni po złożeniu zamówienia
+                <ul>
+                    <li >wysyłka sprawdzoną firmą kurierską</li>
+                    <li>koszt wysyłki to tylko 5 zl</li>
+                </ul>
+            </li>
+            <li>Po zakupie 10 książek nie płacisz za kuriera</li>
+            <li>W przypadku uszkodzenia przesyłki zwracamy 100% kosztów lub bezpłatnie wysyłamy ten sam towar</li>
+            <li>Szeroki wybór - posiadamy aktualnie 2 miliony tytułów!</li>
+        </ol>
+        <picture><img alt="czyta" src="zadanieE14_1/grafika/czyta_anim.gif" /></picture>
     </div>
 
     <?php

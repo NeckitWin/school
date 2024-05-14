@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="./components/styles/header.css">
+    <link rel="stylesheet" href="./components/styles/header.css" style="display: none;">
 </head>
 <header>
     <picture><img alt="logo" src="zadanieE14_1/grafika/ksiazki_m.png"></picture>
